@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./css/style.css">
-	<title>Lesson #</title>
+	<title>Lesson 4</title>
 </head>
 
 <body class="body">
@@ -15,7 +15,45 @@
 	</header>
 	<main>
 		<section>
-			<h1>Home work #</h1>
+			<h1>Homework 4</h1><br>
+			<div class="typeselector">
+				<h2>Типи селекторів</h2>
+				<ul class="list">
+					<li>* {} - звертаємося до всіх елементів на сторінці</li>
+					<li>tag {} - звертаємося до всіх tag на сторінці </li>
+					<li>.class - звертаємося до усіх елементів в яких вказаний "class"</li>
+					<li>.class1.class2 - звертаємося до всіх тегів з class1 та class2</li>
+					<li>#id - звертаємося до всіх елементів з данним id</li>
+					<li>tag1[атрибут1] - звертаємося до всіх tag1 з атрибут1</li>
+					<li>tag1 &gt; tag2 - звертаємося до усіх tag2 в яких батьківським елементом є tag2</li>
+					<li>tag1 + tag2 - звертаємося до tag2, який знаходиться після tag1</li>
+					<li>tag1(пробіл)tag2 - звертаємося до tag2 всередині tag1</li>
+					<li>tag1[class^="слово1"] - звертаємося до усіх tag1 в яких назва классу починається на слово1</li>
+					<li>tag1[class*="слово1"] - звертаємося до усіх tag1 в яких назва классу містить слово1 незалежно від місця розташування</li>
+					<li>.class1 ~ .class2 - звертаємося до class2 який знаходиться на одному рівні вкладеності з class2</li>
+				</ul>
+			</div>
+			<div class="examples">
+				<h2>Приклади селекторів</h2>
+				<ol class="list">
+					<li>
+						<span>За назвою елемента</span>
+					</li>
+					<li>
+						<span id="id">За айді</span>
+					</li>
+					<li>
+						<span class="class">За класом</span>
+					</li>
+					<li>
+						<span class="first">За кількома</span>
+						<span class="second">класами</span>
+					</li>
+					<li>
+						<span class="inside">За вкладеністю</span>
+					</li>
+				</ol>
+			</div>
 		</section>
 	</main>
 	<footer>
