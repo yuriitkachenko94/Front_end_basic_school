@@ -30,8 +30,8 @@ span {
 	color: green;
 }
 
-span.first + span.second{
-	color: yellow;
+.first.second{
+	color: rgb(119, 59, 31);
 }
 
 li > .inside {
