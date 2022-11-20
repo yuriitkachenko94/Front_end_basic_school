@@ -46,7 +46,12 @@ div {
   margin: 50px 50px 0px 50px;
   overflow: auto;
 }
-
+.wrapper-last-block {
+	max-width: 1110px;
+	background-color: #e6e6e6;
+	margin: 50px 50px 50px 50px;
+	overflow: auto;
+}
 .square-big {
   background-color: #fc8f8f;
   width: 200px;
