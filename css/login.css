@@ -1,0 +1,47 @@
+@import url(/fonts/fonts.css);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  color: aliceblue;
+  margin-top: 1rem;
+}
+
+.body {
+  background-image: url(/images/car_garage.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Roboto-Regular;
+}
+.container {
+  max-width: 1110px;
+  margin: auto;
+}
+.label {
+  margin-top: 15px;
+}
+
+.block-form {
+  max-width: fit-content;
+  display: flex;
+  margin: auto;
+  margin-top: 100px;
+  background-color: rgb(235, 242, 247);
+  border-radius: 5px;
+  padding: 5px;
+}
+.button-row {
+  text-align: center;
+}
+
+.button-submit-login,
+.button-reset-login {
+  margin: 10px;
+  width: max-content;
+  cursor: pointer;
+}

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/css/search_page.css">
+	<title>Пошук</title>
+</head>
+
+
+<body class="body">
+	<header> </header>
+	<main>
+		<section>
+			<h1>Знайдіть авто своєї мрії</h1>
+			<div class="container">
+				<div class="block-form">
+					<div class="form">
+						<form action="https://fom.in.ua/echo" method="post">
+							<fieldset class="fieldset">
+								<legend>Вкажіть критерії пошуку авто:</legend>
+								<div class="label">
+									<p>1. Тип кузова:</p>
+									<label>
+										Пікап
+										<input type="checkbox" name="car-style" value="pickup">
+									</label>
+									<label>
+										Cедан
+										<input type="checkbox" name="car-style" value="sedan">
+									</label>
+									<label>
+										Кроссовер
+										<input type="checkbox" name="car-style" value="SUV">
+									</label>
+									<label>
+										Універсал
+										<input type="checkbox" name="car-style" value="universal">
+									</label>
+									<label>
+										Кабріолет
+										<input type="checkbox" name="car-style" value="carbiolet">
+									</label>
+								</div>
+								<div class="label">
+									<p>2. Марка авто:</p>
+									<select name="car-brand" required>
+										<option value="" disabled selected>Оберіть марку авто</option>
+										<option value="Fiat">Fiat</option>
+										<option value="Opel">Opel</option>
+										<option value="Mazda">Mazda</option>
+										<option value="Skoda">Skoda</option>
+										<option value="Toyota">Toyota</option>
+									</select>
+								</div>
+								<div class="label">
+									<p>3. Країна виробник:</p>
+									<select name="production-country" required>
+										<option value="" disabled selected>Оберіть країну виробника</option>
+										<option value="Italy">Італія</option>
+										<option value="Japan">Японія</option>
+										<option value="Germany">Німеччина</option>
+										<option value="Czech">Чехія</option>
+										<option value="Other">Інше</option>
+									</select>
+								</div>
+								<div class="label">
+									<p>4. Ціна в &dollar;:</p>
+									<label>
+										<input name="price-from" placeholder="від" required>
+									</label>
+									<label>
+										<input name="price-upto" placeholder="до" required>
+									</label>
+								</div>
+
+								<div class="label">
+									<p>5. Рік випуску:</p>
+									<label>
+										<input name="year-from" id="year" placeholder="від" required>
+									</label>
+									<input name="year-upto" placeholder="до" required tabindex="19">
+								</div>
+								<div class="label">
+									<p>6. Стан:</p>
+									<label>
+										Була в ДТП
+										<input type="checkbox" name="condition" value="Crashed">
+									</label>
+									<label>
+										У кредиті
+										<input type="checkbox" name="condition" value="loan">
+									</label>
+									<label>
+										Розмитнена
+										<input type="checkbox" name="condition" value="registered">
+									</label>
+									<label>
+										Нерозмитнена
+										<input type="checkbox" name="condition" value="not-registered">
+									</label>
+									<label>
+										В ідеальному технічному стані
+										<input type="checkbox" name="condition" value="excellent-condition">
+									</label>
+								</div>
+								<div class="label">
+									<p>7. Тип палива:</p>
+									<label>
+										Дизель
+										<input type="radio" name="fuel" value="diesel">
+									</label>
+									<label>
+										Бензин
+										<input type="radio" name="fuel" value="petrol">
+									</label>
+									<label>
+										Газ/Бензин
+										<input type="radio" name="fuel" value="petrol/gas">
+									</label>
+									<label>
+										Газ
+										<input type="radio" name="fuel" value="gas">
+									</label>
+									<label>
+										Електро
+										<input type="radio" name="fuel" value="electro">
+									</label>
+								</div>
+								<div class="label">
+									<p>8. Тип коробки передач:</p>
+									<label>
+										Механіка
+										<input type="radio" name="gearbox" value="manual">
+									</label>
+									<label>
+										Автомат
+										<input type="radio" name="gearbox" value="automatic">
+									</label>
+									<label>
+										Робот
+										<input type="radio" name="gearbox" value="robot">
+									</label>
+									<label>
+										Варіатор
+										<input type="radio" name="gearbox" value="variator">
+									</label>
+								</div>
+								<div class="label">
+									<p>9. Колір авто:</p>
+									<select name="car-color">
+										<option value="" disabled selected>Оберіть колір авто</option>
+										<option value="black">Чорний</option>
+										<option value="blue">Синій</option>
+										<option value="yellow">Жовтий</option>
+										<option value="red">Червоний</option>
+										<option value="grey">Сірий</option>
+									</select>
+								</div>
+								<div class="label">
+									<p>10. Комфорт:</p>
+									<label>
+										Кондиціонер
+										<input type="checkbox" name="conveniences" value="air-conditioner">
+									</label>
+									<label>
+										Підігрів сидінь
+										<input type="checkbox" name="conveniences" value="seatsheating">
+									</label>
+									<label>
+										Сигналізація
+										<input type="checkbox" name="conveniences" value="alarm">
+									</label>
+									<label>
+										Мультимедіа
+										<input type="checkbox" name="conveniences" value="multimedia">
+									</label>
+									<label>
+										Турбо-таймер
+										<input type="checkbox" name="conveniences" value="turbotimer">
+									</label>
+									<label>
+										Мультируль
+										<input type="checkbox" name="conveniences" value="multiwheel">
+									</label>
+									<label>
+										Шкіряний салон
+										<input type="checkbox" name="conveniences" value="leather-car">
+									</label>
+								</div>
+								<div class="label">
+									11. Додаткова інформація:<br>
+									<textarea name="comment"></textarea>
+								</div>
+							</fieldset>
+							<div class="button-row">
+								<button type="submit" class="button-submit-search">Відправити</button>
+								<button type="reset" class="button-reset-search">Очистити</button>
+							</div>
+
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer></footer>
+</body>

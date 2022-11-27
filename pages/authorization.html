@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/css/login.css">
+	<title>Авторизація</title>
+</head>
+
+<body class="body">
+	<header>
+
+	</header>
+	<main>
+		<section>
+			<h1>Cторінка авторизації</h1>
+			<div class="container">
+				<div class="block-form">
+					<form action="https://fom.in.ua/echo" method="post">
+						<p>Для входу на сайт заповніть наступні поля авторизації:</p><br>
+						<div class="label">
+							<label for="login">
+								Логін:
+								<input type="email" id="login" name="emailaddress_authorization" placeholder="Вкажіть імейл адресу" required tabindex="1">
+							</label>
+						</div>
+						<div class="label">
+							<label for="password">
+								Пароль:
+								<input type="password" id="password" name="pass_authorization" placeholder="Вкажіть пароль" required tabindex="2">
+							</label>
+						</div>
+						<div class="label">
+							<label>
+								Запам'ятати пароль:
+								<input type="password" name="pass_authorization_confirm" placeholder="Введіть пароль ще раз" required tabindex="3">
+							</label>
+						</div>
+						<div class="button-row">
+							<button type="submit" class="button-submit-login">Відправити</button>
+							<button type="reset" class="button-reset-login">Відхилити</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+
+	</footer>
+</body>
+
+</html>
